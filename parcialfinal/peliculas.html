@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="peliculas.css">
+    <link rel="stylesheet" href="peliculas.js">
+    <title>Lista de Películas</title>
+</head>
+<body>
+    <div class="movie-container">
+        <!-- Película 1 -->
+        <div class="movie-card">
+            <div class="face front" style="background-image: url('images/el\ viaje\ de\ chihiro.jpeg');"></div>
+            <div class="face back">
+                <h2>"Spirited Away" (El viaje de Chihiro)</h2>
+                <p>Chihiro, una niña atrapada en un mundo mágico, debe trabajar en un baño<br>
+                    público para dioses para salvar a sus padres y encontrar el camino de<br>
+                    regreso a casa.<br></p>
+            </div>
+        </div>
+
+        <!-- Película 2 -->
+        <div class="movie-card">
+            <div class="face front" style="background-image: url('images/your\ name.jpeg');"></div>
+            <div class="face back">
+                <h2>"Your Name" (Kimi no Na wa)</h2>
+                <p>Taki y Mitsuha intercambian cuerpos misteriosamente y se embarcan en<br>
+                    una búsqueda cósmica mientras intentan comprender su conexión.<br>
+                    </p>
+            </div>
+        </div>
+
+        <!-- Película 3 -->
+        <div class="movie-card">
+            <div class="face front" style="background-image: url('images/akira.jpeg');"></div>
+            <div class="face back">
+                <h2>"Akira"</h2>
+                <p>En una Neo-Tokyo posapocalíptica, Kaneda se enfrenta a fenómenos <br>>
+                    psíquicos después de que su amigo Tetsuo adquiera poderes <br>
+                    telequinéticos peligrosos.<br> </p>
+            </div>
+        </div>
+
+        <!-- Película 4 -->
+        <div class="movie-card">
+            <div class="face front" style="background-image: url('images/la\ tumba\ de\ las\ luciernagas.jpeg');"></div>
+            <div class="face back">
+                <h2>"Grave of the Fireflies" (La tumba de las luciérnagas)<br></h2>
+                <p>Esta película conmovedora narra la historia de dos hermanos, Seita y <br>
+                    Setsuko, que luchan por sobrevivir en Japón durante la Segunda Guerra Mundial<br></p>
+            </div>
+        </div>
+
+        <!-- Película 5 -->
+        <div class="movie-card">
+            <div class="face front" style="background-image: url('images/la\ princesa\ mononoke.jpeg');"></div>
+            <div class="face back">
+                <h2>"Princess Mononoke" (La princesa Mononoke)</h2>
+                <p>Ashitaka, maldito por un jabalí poseído, busca una cura y se encuentra en <br>
+                    medio de una guerra entre los espíritus del bosque y los humanos que <br>
+                    destruyen la naturaleza.<br> </p>
+            </div>
+        </div>
+
+        <!-- Película 6 -->
+        <div class="movie-card">
+            <div class="face front" style="background-image: url('images/gost\ in\ the\ shel.jpeg');"></div>
+            <div class="face back">
+                <h2>"Ghost in the Shell"</h2>
+                <p>En un futuro cibernético, la Mayor Motoko Kusanagi lidera la unidad de <br>
+                    seguridad cibernética Section 9 para enfrentar amenazas tecnológicas y<br>
+                    filosóficas.<br></p>
+            </div>
+        </div>
+
+        <!-- Película 7 -->
+        <div class="movie-card">
+            <div class="face front" style="background-image: url('images/perfect\ blue.jpeg');"></div>
+            <div class="face back">
+                <h2>"Perfect Blue"</h2>
+                <p>Una ex ídolo pop, Mima, lucha con su identidad y realidad cuando extraños<br>
+                    eventos comienzan a ocurrir después de su transición a actriz.<br>
+                 </p>
+            </div>
+        </div>
+
+        <!-- Película 8 -->
+        <div class="movie-card">
+            <div class="face front" style="background-image: url('images/paprica.jpeg');"></div>
+            <div class="face back">
+                <h2>"Paprika"</h2>
+                <p>En un mundo donde los sueños y la realidad se entrelazan, la terapeuta del <br>
+                    sueño Paprika persigue a un ladrón que roba dispositivos para entrar en los <br>
+                    sueños de las personas<br>
+                </p>
+            </div>
+        </div>
+
+        <!-- Película 9 -->
+        <div class="movie-card">
+            <div class="face front" style="background-image: url('images/wl\ castillo\ ambulante.jpeg');"></div>
+            <div class="face back">
+                <h2>"Howl's Moving Castle" (El castillo ambulante de Howl)</h2>
+                <p>Sophie, transformada en una anciana por una maldición, busca la ayuda del<br>
+                    mago Howl y se une a él en su mágico castillo ambulante.<br>
+                    </p>
+            </div>
+        </div>
+
+        <!-- Película 10 -->
+        <div class="movie-card">
+            <div class="face front" style="background-image: url('images/la\ chica\ que\ saltaba\ atraves\ del\ tiempo.jpeg');"></div>
+            <div class="face back">
+                <h2>"The Girl Who Leapt Through Time" (La chica que saltaba a través del tiempo)</h2>
+                <p>Makoto descubre que puede viajar en el tiempo y utiliza sus <br>
+                    habilidades para cambiar eventos en su vida, pero pronto se enfrenta <br>
+                    a las consecuencias de sus acciones.<br></p>
+            </div>
+        </div>
+    </div>
+    <div class="cart-container">
+        <h2>Carrito de Películas</h2>
+        <button onclick="toggleCarrito()">Mostrar/ocultar carrito</button>
+        <ul id="cart-list"></ul>
+        <div id="agregarEliminar">
+            <button onclick="agregarPeliculaAlCarrito('Spirited Away', 'El viaje de Chihiro')">Agregar al carrito</button>
+            <button onclick="agregarPeliculaAlCarrito('Your Name', 'Kimi no Na wa')">eliminar  al carrito</button>
+            <!-- Agrega botones para las demás películas según el mismo patrón -->
+        </div>
+    </div>
+    
+</body>
+</html>

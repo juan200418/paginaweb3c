@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(8, 44, 44);
+}
+
+p, h2 {
+    color: white;
+}
+
+.game-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(24, 100, 100);
+    perspective: 1000px; /* Añade perspectiva para la rotación 3D */
+    cursor: pointer;
+    transition: transform 0.5s; /* Añade una transición para suavizar la rotación */
+}
+
+/* Asegúrate de que esta clase esté definida en tu CSS */
+.game-card.back {
+    transform: rotateY(180deg);
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s; /* Añade transición para suavizar la rotación */
+}
+
+.game-card:hover .card-inner {
+    transform: rotateY(180deg); /* Voltea la tarjeta al pasar el ratón sobre ella */
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}

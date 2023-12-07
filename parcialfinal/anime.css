@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d16f6f;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarjeta {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+h2 {
+    color: #333;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/* Colores de fondo diferentes para cada tarjeta */
+.tarjeta:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+/* Estilo inicial de la información (oculta) */
+.info {
+    display: none;
+}

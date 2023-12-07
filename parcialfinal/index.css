@@ -1,0 +1,167 @@
+body{
+    background-color:rgb(8, 36, 54) ;
+}
+p,h2,a {
+    color: white;
+}
+.texto{
+    color: white;
+}
+.fondo {
+    border-radius: 0; /* Elimina el redondeo para que la imagen sea rectangular */
+}
+  
+
+nav {
+    background-color: red;
+    line-height: 0px;
+    margin: 0 auto; /* Esto centrará horizontalmente el objeto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 800px;
+    height: 230px;
+}
+
+/*crea los contenedores y les pone colores */
+.contenedorMenu {
+    width: 200px; 
+    height: 230px; 
+    float: left;
+}
+#uno {
+    background-color: rgb(22, 107, 162);
+}
+
+#dos {
+    background-color: rgb(22, 107, 162);
+}
+
+#tres {
+    background-color: rgb(22, 107, 162);
+}
+
+#cuatro {
+    background-color: rgb(22, 107, 162);
+}
+/*crea el fondo rojo al icono */
+.icon {
+    margin: 50px ; 
+    text-align: center;
+    padding: 20px; 
+    display: block; 
+    width: 40px; 
+    border-radius: 50%; 
+    background-color: red; /* Fondo rojo para observar temporalmente */
+}
+.icon {
+    margin: 50px ; /* 50px de margen superior e inferior */
+    text-align: center; /* Centrar el contenido horizontalmente */
+    padding: 20px; /* Espaciado de 20px alrededor del contenido */
+    display: block; /* Cambiar el comportamiento a bloque */
+    width: 40px; /* Ancho de 40px */
+    border-radius: 50%; /* Radio del borde en 50% */
+    background-color: rgba(255, 255, 255, 0.15); /* Fondo con color rgba(255, 255, 255, 0.15) */
+}
+.texto {
+    font-size: 1.2em; /* Tamaño de letra 1.2em */
+    color: rgb(31, 23, 23); /* Color de letra blanco */
+    text-align: center; /* Texto centrado */
+}
+.texto {
+    font-size: 1.2em; /* Tamaño de letra 1.2em */
+    color: rgb(31, 23, 23); /* Color de letra blanco */
+    text-align: center; /* Texto centrado */
+    margin-top: 10px; /* Espaciado superior de 10px */
+    opacity: 0.6; /* Opacidad 0.6 (60%) */
+}
+
+.contenedorMenu {
+    /* Estilos regulares del contenedor */
+    /* ... otros estilos ... */
+    transition: transform 0.3s; /* Agrega una transición suave para que la animación sea gradual */
+}
+
+.contenedorMenu:hover {
+    transform: scale(1.05); /* Escala el contenedor al 105% de su tamaño original al pasar el mouse sobre él */
+}
+.contenedorMenu {
+    /* Estilos regulares del contenedor */
+    /* ... otros estilos ... */
+    transition: height 0.3s; /* Agrega una transición suave para que la animación sea gradual */
+}
+
+.contenedorMenu:hover {
+    height: calc(100% + 50px); /* Incrementa la altura en 50px al pasar el mouse sobre el elemento */
+}
+.contenedorMenu {
+    /* Estilos regulares del contenedor */
+    /* ... otros estilos ... */
+    transition: height 0.4s; /* Agrega una transición suave de 0.4 segundos para la altura */
+}
+
+.contenedorMenu:hover {
+    height: calc(100% + 50px); /* Incrementa la altura en 50px al pasar el mouse sobre el elemento */
+}
+.contenedorMenu {
+    /* Estilos regulares del contenedor */
+    /* ... otros estilos ... */
+    transition: height 0.4s; /* Transición suave para la altura */
+}
+
+.texto {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.6;
+    transition: margin-top 0.4s; /* Transición suave para el margen superior */
+}
+
+.contenedorMenu:hover {
+    height: calc(100% + 50px); /* Incrementa la altura en 50px al pasar el mouse sobre el elemento */
+}
+
+.contenedorMenu:hover .texto {
+    margin-top: 100px; /* Baja el texto al aumentar el tamaño del contenedor */
+}
+
+.texto {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.6;
+    transition: margin-top 0.4s, height 0.4s; /* Transición suave para el margen superior y la altura */
+}
+/* se crea el circulo blanco */
+.icon {
+    margin: 50px;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0); /* Cambia la opacidad a 0 */
+    transition: transform 0.4s, box-shadow 0.4s; /* Agrega transición para el efecto de sombra */
+    box-shadow: 0px 0px 0px 30px white; /* Propiedades de sombra inicial */
+}
+
+.contenedorMenu:hover .icon {
+    transform: scale(1.0); /* Aumenta el tamaño del icono al pasar el mouse sobre el contenedor */
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.4); /* Reduce la extensión y el desenfoque de la sombra */
+    transition: box-shadow 0.4s; /* Agrega transición para la sombra */
+}
+
+.texto {
+    font-size: 1.2em;
+    color: rgb(31, 23, 23);
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.6;
+    transition: margin-top 0.4s, opacity 0.4s; /* Agrega transición suave para el margen superior y la opacidad */
+}
+
+.contenedorMenu:hover .texto {
+    margin-top: 100px;
+    opacity: 1; 
+}
+

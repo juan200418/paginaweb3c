@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Cards</title>
+    <link rel="stylesheet" type="text/css" href="videojuegos.css">
+</head>
+<body>
+
+    <div class="game-card" id="card1" onclick="toggleCard('card1', 'The Legend of Zelda: Breath of the Wild', 'Aventura', 'Sumérgete en el vasto mundo de Hyrule...')">
+        <h2>The Legend of Zelda: Breath of the Wild</h2>
+        <p>Descripción: Sumérgete en el vasto mundo de Hyrule...</p>
+    </div>
+
+    <div class="game-card" id="card2" onclick="toggleCard('card2', 'Overwatch', 'Shooter en primera persona (FPS)', 'Forma parte de un equipo de héroes con habilidades únicas en este juego de disparos en equipo.')">
+        <h2>Overwatch</h2>
+        <p>Género: Shooter en primera persona (FPS)<br>
+            Descripción: Forma parte de un equipo de héroes con habilidades únicas en este juego de disparos en equipo.</p>
+    </div>
+
+    <div class="game-card" id="card3" onclick="toggleCard('card3', 'Minecraft', 'Sandbox, construcción', 'Explora, construye y sobrevive en un mundo pixelado lleno de posibilidades.')">
+        <h2>Minecraft</h2>
+        <p>Género: Sandbox, construcción<br>
+            Descripción: Explora, construye y sobrevive en un mundo pixelado lleno de posibilidades.</p>
+    </div>
+
+    <div class="game-card" id="card4" onclick="toggleCard('card4', 'The Witcher 3: Wild Hunt', 'RPG (Rol de acción)', 'Embárcate en una épica búsqueda como Geralt de Rivia, cazador de monstruos, en este juego de rol lleno de historias intrigantes.')">
+        <h2>The Witcher 3: Wild Hunt</h2>
+        <p>Género: RPG (Rol de acción)<br>
+            Descripción: Embárcate en una épica búsqueda como Geralt de Rivia, cazador de monstruos, en este juego de rol lleno de historias intrigantes.</p>
+    </div>
+
+    <div class="game-card" id="card5" onclick="toggleCard('card5', 'Fortnite', 'Battle Royale, Shooter', 'Únete a la batalla para ser el último en pie en este popular juego de estilo battle royale.')">
+        <h2>Fortnite</h2>
+        <p>Género: Battle Royale, Shooter<br>
+            Descripción: Únete a la batalla para ser el último en pie en este popular juego de estilo battle royale.</p>
+    </div>
+
+    <!-- Repite lo siguiente para añadir más tarjetas -->
+
+    <div class="game-card" id="card6" onclick="toggleCard('card6', 'Super Mario Odyssey', 'Plataformas', 'Ayuda a Mario a viajar por el mundo en una misión para rescatar a la Princesa Peach utilizando su sombrero mágico, Cappy.')">
+        <h2>Super Mario Odyssey</h2>
+        <p>Género: Plataformas<br>
+            Descripción: Ayuda a Mario a viajar por el mundo en una misión para rescatar a la Princesa Peach utilizando su sombrero mágico, Cappy.</p>
+    </div>
+
+    <div class="game-card" id="card7" onclick="toggleCard('card7', 'League of Legends', 'MOBA (Arena de batalla en línea)', 'Únete a un equipo de campeones y compite en intensas batallas estratégicas en línea.')">
+        <h2>League of Legends</h2>
+        <p>Género: MOBA (Arena de batalla en línea)<br>
+            Descripción: Únete a un equipo de campeones y compite en intensas batallas estratégicas en línea.</p>
+    </div>
+
+    <div class="game-card" id="card8" onclick="toggleCard('card8', 'FIFA 22', 'Deportes, Simulación', 'Experimenta la emoción del fútbol con gráficos realistas y modos de juego variados.')">
+        <h2>FIFA 22</h2>
+        <p>Género: Deportes, Simulación<br>
+            Descripción: Experimenta la emoción del fútbol con gráficos realistas y modos de juego variados.</p>
+    </div>
+
+    <div class="game-card" id="card9" onclick="toggleCard('card9', 'Animal Crossing: New Horizons', 'Simulación de vida', 'Crea tu propia isla paradisíaca, haz amigos con personajes antropomórficos y disfruta de la tranquilidad de la vida.')">
+        <h2>Animal Crossing: New Horizons</h2>
+        <p>Género: Simulación de vida<br>
+            Descripción: Crea tu propia isla paradisíaca, haz amigos con personajes antropomórficos y disfruta de la tranquilidad de la vida.</p>
+    </div>
+
+    <script src="videojuegos.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Cards</title>
+    <link rel="stylesheet" type="text/css" href="videojuegos.css">
+</head>
+<body>
+
+    <div class="game-card" id="card1" onclick="toggleCard('card1', 'The Legend of Zelda: Breath of the Wild', 'Aventura', 'Sumérgete en el vasto mundo de Hyrule...', 'img/zelda.jpg')">
+        <div class="card-inner">
+            <div class="front">
+                <h2>The Legend of Zelda: Breath of the Wild</h2>
+                <img src="images/zelda.jpeg" alt="Zelda Image">
+            </div>
+            <div class="back">
+                <p>Género: Aventura<br>
+                    Descripción: Sumérgete en el vasto mundo de Hyrule...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-card" id="card2" onclick="toggleCard('card2', 'Overwatch', 'Shooter en primera persona (FPS)', 'Forma parte de un equipo de héroes con habilidades únicas en este juego de disparos en equipo.')">
+        <h2>Overwatch</h2>
+        <p>Género: Shooter en primera persona (FPS)<br>
+            Descripción: Forma parte de un equipo de héroes con habilidades únicas en este juego de disparos en equipo.</p>
+    </div>
+
+    <div class="game-card" id="card3" onclick="toggleCard('card3', 'Minecraft', 'Sandbox, construcción', 'Explora, construye y sobrevive en un mundo pixelado lleno de posibilidades.')">
+        <h2>Minecraft</h2>
+        <p>Género: Sandbox, construcción<br>
+            Descripción: Explora, construye y sobrevive en un mundo pixelado lleno de posibilidades.</p>
+    </div>
+
+    <div class="game-card" id="card4" onclick="toggleCard('card4', 'The Witcher 3: Wild Hunt', 'RPG (Rol de acción)', 'Embárcate en una épica búsqueda como Geralt de Rivia, cazador de monstruos, en este juego de rol lleno de historias intrigantes.')">
+        <h2>The Witcher 3: Wild Hunt</h2>
+        <p>Género: RPG (Rol de acción)<br>
+            Descripción: Embárcate en una épica búsqueda como Geralt de Rivia, cazador de monstruos, en este juego de rol lleno de historias intrigantes.</p>
+    </div>
+
+    <div class="game-card" id="card5" onclick="toggleCard('card5', 'Fortnite', 'Battle Royale, Shooter', 'Únete a la batalla para ser el último en pie en este popular juego de estilo battle royale.')">
+        <h2>Fortnite</h2>
+        <p>Género: Battle Royale, Shooter<br>
+            Descripción: Únete a la batalla para ser el último en pie en este popular juego de estilo battle royale.</p>
+    </div>
+
+    <!-- Repite lo siguiente para añadir más tarjetas -->
+
+    <div class="game-card" id="card6" onclick="toggleCard('card6', 'Super Mario Odyssey', 'Plataformas', 'Ayuda a Mario a viajar por el mundo en una misión para rescatar a la Princesa Peach utilizando su sombrero mágico, Cappy.')">
+        <h2>Super Mario Odyssey</h2>
+        <p>Género: Plataformas<br>
+            Descripción: Ayuda a Mario a viajar por el mundo en una misión para rescatar a la Princesa Peach utilizando su sombrero mágico, Cappy.</p>
+    </div>
+
+    <div class="game-card" id="card7" onclick="toggleCard('card7', 'League of Legends', 'MOBA (Arena de batalla en línea)', 'Únete a un equipo de campeones y compite en intensas batallas estratégicas en línea.')">
+        <h2>League of Legends</h2>
+        <p>Género: MOBA (Arena de batalla en línea)<br>
+            Descripción: Únete a un equipo de campeones y compite en intensas batallas estratégicas en línea.</p>
+    </div>
+
+    <div class="game-card" id="card8" onclick="toggleCard('card8', 'FIFA 22', 'Deportes, Simulación', 'Experimenta la emoción del fútbol con gráficos realistas y modos de juego variados.')">
+        <h2>FIFA 22</h2>
+        <p>Género: Deportes, Simulación<br>
+            Descripción: Experimenta la emoción del fútbol con gráficos realistas y modos de juego variados.</p>
+    </div>
+
+    <div class="game-card" id="card9" onclick="toggleCard('card9', 'Animal Crossing: New Horizons', 'Simulación de vida', 'Crea tu propia isla paradisíaca, haz amigos con personajes antropomórficos y disfruta de la tranquilidad de la vida.')">
+        <h2>Animal Crossing: New Horizons</h2>
+        <p>Género: Simulación de vida<br>
+            Descripción: Crea tu propia isla paradisíaca, haz amigos con personajes antropomórficos y disfruta de la tranquilidad de la vida.</p>
+    </div>
+
+    <script src="videojuegos.js"></script>
+</body>
+</html>

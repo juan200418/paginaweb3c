@@ -1,0 +1,53 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(21, 27, 44); /* Fondo de color azul oscuro */
+}
+
+/* Estilo para el contenedor del formulario de inicio de sesión */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid rgb(115, 180, 240); /* Borde con tono gris */
+    border-radius: 5px;
+    background-color:rgb(10, 60, 94) ;
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los campos de entrada */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el botón de inicio de sesión */
+button {
+    background-color: #6a4caf; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilo para el botón al pasar el cursor sobre él */
+button:hover {
+    background-color: #457fa0; /* Cambia el color de fondo al pasar el cursor */
+}
+h2{
+    color: white;
+}
+label{
+    color: white;
+}
